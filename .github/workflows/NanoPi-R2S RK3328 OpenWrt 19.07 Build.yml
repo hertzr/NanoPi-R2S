@@ -30,8 +30,8 @@ jobs:
           sudo apt-get -y autoremove --purge          
           wget -O - https://raw.githubusercontent.com/friendlyarm/build-env-on-ubuntu-bionic/master/install.sh | bash
 
-      #- name: Setup Debug Session
-      #  uses: P3TERX/debugger-action@master
+      - name: Setup Debug Session
+        uses: P3TERX/debugger-action@master
   
       - name: Install Repo
         run: |
